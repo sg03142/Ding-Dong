@@ -14,7 +14,7 @@ router.get('/', function (req, res) {
 router.get('/views/seonghoon',function(req,res){res.sendFile(path.join(__dirname+'/views/seonghoon.html'));});
 
 router.get('/chaelin', function (req, res) {
-    res.sendFile(path.join(__dirname + '/views/chaelin/c_09_carousel.html'))
+    res.sendFile(path.join(__dirname + '/views/chaelin//project/0717_project.html'))
     //__dirname : It will resolve to your project folder.
 });
 
