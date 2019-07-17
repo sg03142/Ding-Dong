@@ -14,13 +14,9 @@ router.get('/', function (req, res) {
 router.get('/views/seonghoon',function(req,res){res.sendFile(path.join(__dirname+'/views/seonghoon.html'));});
 
 router.get('/chaelin', function (req, res) {
-    res.sendFile(path.join(__dirname + '/views/chaelin/c_07_button.html'))
+    res.sendFile(path.join(__dirname + '/views/chaelin/c_09_carousel.html'))
     //__dirname : It will resolve to your project folder.
 });
 
-router.get('/c_05_table', function (req, res) {
-    res.sendFile(path.join(__dirname + '/views/chaelin/c_05_table.html'))
-    //__dirname : It will resolve to your project folder.
-});
 app.use('/', router);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
