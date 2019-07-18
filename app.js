@@ -37,8 +37,14 @@ router.get('/20190718form', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/seonghoon/20190718/formgroup.html'))
     //__dirname : It will resolve to your project folder.
 });
+router.get('/20190718inputgroup', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/seonghoon/20190718/inputgroup.html'))
+    //__dirname : It will resolve to your project folder.
+});
 
-router.get('/20190718submit',function(req,res){console.log(req.query); res.send('Request parameters : '+ req.query.email+','+ req.query.status)});
+
+router.get('/20190718submit',function(req,res){console.log(req.query); res.send('Request parameters : '+ req.query.email+','+ req.query.status+','+req.query.Vehicle1)});
+router.get('/20190718inputsubmit',function(req,res){console.log(req.query); res.send('Request parameters : '+ req.query.name+','+ req.query.etc)});
 
 app.use('/', router);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
