@@ -29,5 +29,14 @@ router.get('/c_12', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/chaelin/c_12_navbar_external.html'))
     //__dirname : It will resolve to your project folder.
 });
+router.get('/c_13', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/chaelin/c_13_form.html'))
+    //__dirname : It will resolve to your project folder.
+});
+router.get('/detail', function (req, res) {
+    console.log(req.query);
+    res.send('Request parameters : '+req.query.email+', '+req.query.status)
+    });
+
 app.use('/', router);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
