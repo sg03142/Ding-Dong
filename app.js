@@ -21,5 +21,9 @@ router.get('/c_10', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/chaelin/c_10_dropdown.html'))
     //__dirname : It will resolve to your project folder.
 });
+router.get('/c_11', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/chaelin/c_11_navbar.html'))
+    //__dirname : It will resolve to your project folder.
+});
 app.use('/', router);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
