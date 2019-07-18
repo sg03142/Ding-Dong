@@ -33,6 +33,10 @@ router.get('/c_12', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/chaelin/c_12_navbar_external.html'))
     //__dirname : It will resolve to your project folder.
 });
+router.get('/c_13', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/chaelin/c_13_form.html'))
+    //__dirname : It will resolve to your project folder.
+});
 router.get('/20190718form', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/seonghoon/20190718/formgroup.html'))
     //__dirname : It will resolve to your project folder.
