@@ -49,7 +49,6 @@ router.get('/20190718form', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/seonghoon/20190718/formgroup.html'))
     //__dirname : It will resolve to your project folder.
 });
-<<<<<<< HEAD
 router.get('/20190718inputgroup', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/seonghoon/20190718/inputgroup.html'))
     //__dirname : It will resolve to your project folder.
@@ -58,23 +57,6 @@ router.get('/20190718inputgroup', function (req, res) {
 
 router.get('/20190718submit',function(req,res){console.log(req.query); res.send('Request parameters : '+ req.query.email+','+ req.query.status+','+req.query.Vehicle1)});
 router.get('/20190718inputsubmit',function(req,res){console.log(req.query); res.send('Request parameters : '+ req.query.name+','+ req.query.etc)});
-=======
-router.get('/detail', function (req, res) {
-    console.log(req.query.email);
-    res.send('Request parameters : ' + req.query.email + ', ' + req.query.status)
-});
-
-router.get('/20190718submit', function (req, res) { console.log(req.query); res.send('Request parameters : ' + req.query.email + ',' + req.query.status) });
-
-router.get('/pro2', function (req, res) {
-    res.sendFile(path.join(__dirname + '/views/chaelin/project/0718_project.html'))
-    //__dirname : It will resolve to your project folder.
-});
-
-router.get('/proj_ans_01', function (req, res) {
-    res.send('Request parameters : email: ' + req.query.email + ' / password: ' + req.query.psw + ' / remember? ' + req.query.remember)
-});
->>>>>>> 9640594c4a28f3710439151bf97ea22e67873039
 
 router.get('/proj_ans_02', function (req, res) {
     res.send('Request parameters : email: ' + req.query.email + ' / password: ' + req.query.psw + ' / text: ' + req.query.text)
