@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="border p-3">
+            <form action="/proj_ans_01">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email:">
+                </div>
+                <div class="form-group">
+                    <label for="psw">Password:</label>
+                    <input type="password" class="form-control" id="psw" name="psw" placeholder="Enter password:">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label" for="check1">
+                            <input type="checkbox" class="form-check-input" name="remember" id="check1" checked>
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="border p-3">
+
+            <form action="/proj_ans_02">
+                <div class="form-group input-group mb-0">
+                    <div class="input-group-prepend"><span class="input-group-text fa fa-user"></span>
+                    </div>
+                    <input type="email" class="form-control" name="email" placeholder="Email">
+                </div>
+                <div class="form-group input-group mt-0">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text fa fa-lock"></span>
+                    </div>
+                    <input type="password" class="form-control" name="psw" placeholder="Password">
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">text</span>
+                    </div>
+                    <input type="text" class="form-control" name="text" placeholder="Additional Info">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="border p-3">
+            <form action="/proj_ans_03">
+                <div class="form-group">
+                    <label for="sel1"><strong>Select list (select one):</strong></label>
+                    <select class="custom-select col" name="sel1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <label for="sel1"><strong> select list (hold ctrl or shift (or drag with the mouse)
+                                to select more than one): </strong></label>
+                        <select class="custom-select col" multiple name="sel2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="border p-3">
+            <form action="/proj_ans_03">
+                <div class="form-group">
+                    <label for="disabledinput"><strong>Disabled</strong></label>
+                    <input type="text" class="form-control" disabled placeholder="Disabled input here">
+                </div>
+                <div class="form-group">
+                    <label for="input"><strong class="text-success">Success</strong></label>
+                    <input type="text" class="form-control is-valid">
+                </div>
+                <div class="form-group">
+                    <label for="input"><strong class="text-warning">Warning</strong></label>
+                    <input type="text" class="form-control ">
+                </div>
+                <div class="form-group">
+                    <label for="input"><strong class="text-danger">Error</strong></label>
+                    <input type="text" class="form-control is-invalid">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+</html>
