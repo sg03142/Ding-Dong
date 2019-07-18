@@ -11,7 +11,8 @@ router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'))
     //__dirname : It will resolve to your project folder.
 });
-router.get('/views/seonghoon', function (req, res) { res.sendFile(path.join(__dirname + '/views/seonghoon.html')); });
+
+router.get('/views/seonghoon',function(req,res){res.sendFile(path.join(__dirname+'/views/seonghoon.html'));});
 
 router.get('/chaelin', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/chaelin/project/0717_project.html'))
@@ -29,14 +30,5 @@ router.get('/c_12', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/chaelin/c_12_navbar_external.html'))
     //__dirname : It will resolve to your project folder.
 });
-router.get('/c_13', function (req, res) {
-    res.sendFile(path.join(__dirname + '/views/chaelin/c_13_form.html'))
-    //__dirname : It will resolve to your project folder.
-});
-router.get('/detail', function (req, res) {
-    console.log(req.query.email);
-    res.send('Request parameters : '+req.query.email+', '+req.query.status)
-    });
-
 app.use('/', router);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
