@@ -45,6 +45,10 @@ router.get('/c_15', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/chaelin/c_15_card.html'))
     //__dirname : It will resolve to your project folder.
 });
+router.get('/c_16', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/chaelin/c_16_modal.html'))
+    //__dirname : It will resolve to your project folder.
+});
 
 router.get('/pro2', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/chaelin/project/0718_project.html'))
