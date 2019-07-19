@@ -95,22 +95,22 @@
             </form>
         </div>
         <div class="border p-3">
-            <form action="/proj_ans_03">
+            <form action="/proj_ans_04">
                 <div class="form-group">
                     <label for="disabledinput"><strong>Disabled</strong></label>
                     <input type="text" class="form-control" disabled placeholder="Disabled input here">
                 </div>
                 <div class="form-group">
                     <label for="input"><strong class="text-success">Success</strong></label>
-                    <input type="text" class="form-control is-valid">
+                    <input type="text" name="success" class="form-control is-valid">
                 </div>
                 <div class="form-group">
                     <label for="input"><strong class="text-warning">Warning</strong></label>
-                    <input type="text" class="form-control ">
+                    <input type="text" name="warning" class="form-control border-warning">
                 </div>
                 <div class="form-group">
                     <label for="input"><strong class="text-danger">Error</strong></label>
-                    <input type="text" class="form-control is-invalid">
+                    <input type="text" name="error" class="form-control is-invalid">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-outline-secondary">Submit</button>

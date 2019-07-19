@@ -45,6 +45,12 @@ router.get('/c_15', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/chaelin/c_15_card.html'))
     //__dirname : It will resolve to your project folder.
 });
+
+router.get('/pro2', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/chaelin/project/0718_project.html'))
+    //__dirname : It will resolve to your project folder.
+});
+
 router.get('/20190718form', function (req, res) {
     res.sendFile(path.join(__dirname + '/views/seonghoon/20190718/formgroup.html'))
     //__dirname : It will resolve to your project folder.
@@ -58,11 +64,19 @@ router.get('/20190718inputgroup', function (req, res) {
 router.get('/20190718submit',function(req,res){console.log(req.query); res.send('Request parameters : '+ req.query.email+','+ req.query.status+','+req.query.Vehicle1)});
 router.get('/20190718inputsubmit',function(req,res){console.log(req.query); res.send('Request parameters : '+ req.query.name+','+ req.query.etc)});
 
+router.get('/proj_ans_01', function (req, res) {
+    res.send('Request parameters : email: ' + req.query.email + ' / password: ' + req.query.psw)
+});
+
 router.get('/proj_ans_02', function (req, res) {
     res.send('Request parameters : email: ' + req.query.email + ' / password: ' + req.query.psw + ' / text: ' + req.query.text)
 });
 router.get('/proj_ans_03', function (req, res) {
     res.send('Request parameters : select1: ' + req.query.sel1 + ' / select2: ' + req.query.sel2 )
+});
+
+router.get('/proj_ans_04', function (req, res) {
+    res.send('Request parameters : success: ' + req.query.success + ' / warning: ' + req.query.warning+ ' / error: ' + req.query.error )
 });
 app.use('/', router);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
